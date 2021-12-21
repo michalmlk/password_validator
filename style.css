@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: rgb(40, 40, 40);
+	color: #fff;
+	font-family: 'Roboto Mono', sans-serif;
+	text-transform: uppercase;
+}
+.wrapper {
+	width: 60vw;
+	height: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+	margin: 20px;
+	font-size: 42px;
+}
+input {
+	margin: 20px auto 10px auto;
+	width: 60%;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 3px solid rgb(110, 109, 109);
+	font-size: 24px;
+	color: #fff;
+	outline: none;
+	transition: 0.3s;
+}
+input:focus {
+	border-color: #fff;
+}
+input::placeholder {
+	font-size: 14px;
+	transition: 0.3s;
+}
+input:focus::placeholder {
+	transform: translateX(500px);
+	opacity: 0;
+}
+ul {
+	list-style: none;
+}
+ul li {
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+li:nth-child(3) {
+	color: aqua;
+}
+.inf {
+	font-size: 14px;
+	margin-bottom: 40px;
+	margin-top: 0;
+	color: rgb(116, 116, 116);
+}
+
+@media (max-width: 1024px) {
+	body {
+		width: 100vw;
+	}
+	.wrapper {
+		width: 100vw;
+		align-items: center;
+	}
+	h1 {
+		font-size: 40px;
+	}
+}
+@media (max-width: 540px) {
+	.wrapper {
+		width: 90vw;
+		height: 80vh;
+		align-items: center;
+		justify-content: center;
+	}
+	h1 {
+		font-size: 24px;
+		text-align: center;
+	}
+	ul li {
+		font-size: 10px;
+	}
+	input {
+		width: 80vw;
+	}
+	p {
+		font-size: 12px;
+	}
+	.inf {
+		font-size: 10px;
+	}
+}
+@media (max-width: 360px) {
+	.wrapper {
+		width: 90vw;
+		height: 80vh;
+		align-items: center;
+		justify-content: center;
+	}
+	h1 {
+		font-size: 24px;
+		text-align: center;
+	}
+	ul li {
+		font-size: 10px;
+	}
+	input {
+		width: 80vw;
+	}
+	p {
+		font-size: 12px;
+	}
+	.inf {
+		font-size: 10px;
+	}
+}
+@media (max-width: 812px) and (orientation: landscape) {
+	.wrapper {
+		width: 100vw;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	p {
+		font-size: 14px;
+	}
+	ul li {
+		font-size: 10px;
+	}
+}
